@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contacts</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form__container">
+            <form id="contactForm" class="contact__form">
+                <img src="images/call.png" width="50" class="contact__logo">
+                <label>
+                    Name:
+                    <input type="text" placeholder="name" id="name"></label>
+                </label>
+                <label>
+                    Surname:
+                    <input type="text" placeholder="surname" id="surname"></label>
+                </label>
+                <label>
+                    Phone:
+                    <input type="text" placeholder="XXX-XXX-XXXX" id="phone"></label>
+                </label>
+                <button type="submit" class="btn__add">Add contact</button>
+            </form>
+        </div>
+
+        <table id="contactList" class="contact__list">
+            <thead class="list__thead">
+                <tr>
+                    <th colspan="3">
+                        <button class="btn__add">
+                            <svg version="1.1" id="iconAdd" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <path d="M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.853,256-256S397.167,0,256,0z M256,472.341
+                                    c-119.275,0-216.341-97.046-216.341-216.341S136.725,39.659,256,39.659S472.341,136.705,472.341,256S375.295,472.341,256,472.341z"/>
+                                </g>
+                                <g>
+                                <path d="M355.148,234.386H275.83v-79.318c0-10.946-8.864-19.83-19.83-19.83s-19.83,8.884-19.83,19.83v79.318h-79.318
+                                    c-10.966,0-19.83,8.884-19.83,19.83s8.864,19.83,19.83,19.83h79.318v79.318c0,10.946,8.864,19.83,19.83,19.83
+                                    s19.83-8.884,19.83-19.83v-79.318h79.318c10.966,0,19.83-8.884,19.83-19.83S366.114,234.386,355.148,234.386z"/>
+                                </g>
+                            </svg>
+                            Add contact
+                        </button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
